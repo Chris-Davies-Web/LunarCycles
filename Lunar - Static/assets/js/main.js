@@ -23,5 +23,9 @@ $(function() {
 			
 		}); // end window scroll
 	});
+
+	$('.faq .question').click(function(){
+		$(this).parent().toggleClass('open');
+	})
 	
 });

@@ -239,18 +239,53 @@ form textarea {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 }
 
+/* ==== NAV ==== */
+div.navbar.navbar-inverse{
+	background-color: #1b2035;
+}
+
+div.navbar.navbar-inverse .navbar-nav > .active > a{
+	background-color: #44caea;
+	font-weight: bold;
+}
+
+div.navbar.navbar-inverse a.navbar-brand span{
+	font-weight: bold;
+	margin: 10px;
+	color: white;
+}
+
+/* === TESTTIMONIALS === */
+#testimonials .testimonial{
+	display: inline-block;
+}
+
+#testimonials .testimonial p{
+	font-style: italic;
+}
+
+#testimonials .testimonial .author{
+	font-weight: bold;
+}
+
+#testimonials .section-header img{
+	width: 100px;
+}
+
+
 /* ==== HERO ==== */
 
 #hero {
-	background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
-	min-height: 500px;
-	position: relative;
-	display: table;
-	width: 100%;
-	padding: 40px 0;
-	color: white;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizelegibility;
+	background: url(../img/hero-bg.jpg) 50% 0 no-repeat fixed;
+    height: 75vh;
+    position: relative;
+    display: table;
+    width: 100%;
+    padding: 40px 0;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    background-size: cover;
 }
 
 #hero article { 
@@ -258,10 +293,24 @@ form textarea {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
+  top: -120px;
+  position: relative;
 }
 
 #hero .hero-text {
-	margin-top: 30px;
+	background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+}
+
+#hero .hero-text h1, #hero .hero-text p{
+	color: #1b2035;
+}
+
+#hero .hero-text p{
+	font-size: 18px;
+	font-weight: bold;
 }
 
 #price-timeline {
@@ -349,8 +398,9 @@ section.main-content {
 }
 
 .feature-image-default {
-	background: url('../img/stuff-feature.jpg') no-repeat;
+	background: url('../img/bike-accessories.jpg') no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 .feature-image-default-alt {
@@ -362,20 +412,32 @@ section.main-content {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	color: white;
+	color: #1b2035;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 30px;
 }
 
-#optin {
-	background: #3e4249;
+#how-we-work {
+	background: #1b2035;
 	padding: 20px 0;
 	color: white;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
 	font-size: 1.2em;
+	text-align: center;
 }
 
-#optin p {
-	margin: 7px 0 0 0;
+#how-we-work p {
+	margin: 20px 0 0 0;
+}
+
+#how-we-work .container > .row > div{
+	padding: 30px;
+    margin: auto;
+}
+
+#how-we-work i{
+	font-size: 60px;
 }
 
 #course-features {
@@ -384,7 +446,7 @@ section.main-content {
 	text-align: center;
 }
 
-#who-benefits {
+#opening-hours {
 	background: white;
 }
 
@@ -439,14 +501,6 @@ section.main-content {
 	text-align: center;
 }
 
-.testimonial {
-	margin-bottom: 60px;
-}
-
-.testimonial img {
-	border-radius: 50%;
-}
-
 #signup {
 	text-align: center;
 	background: url('../img/hipster-stuff.jpg') center center repeat fixed;
@@ -468,7 +522,7 @@ section.main-content {
 }
 
 footer {
-	background: #3e4249;
+	background: #1b2035;
 	color: white;
 	padding: 20px 0 10px;
 	font-size: 12px;
@@ -483,15 +537,22 @@ footer a:link, footer a:visited {
 }
 
 footer a:hover {
-	color: #dd5638;
+	color: white;
+	background-color: #44caea;
+    font-weight: bold;
 }
 
-footer li.signup-link a {
-	color: #dd5638;
+
+
+
+/** === OPENING HOURS === */
+#opening-hours .row{
+	text-align: center;
+
 }
 
-footer li.signup-link a:hover {
-	font-weight: bold;
+#opening-hours .section-header i{
+	font-size: 50px;
 }
 
 /* ==== BLOG ==== */
@@ -615,17 +676,51 @@ footer li.signup-link a:hover {
 	border-top: solid 1px #eee;
 }
 
-/* === RESOURCES === */
-
-.resource {
-	width: 31.33333333%;
-	float: left;
-	margin: 0 3% 40px 0;
+/*=== FAQ === */
+#content .faq .answer{
+	transition: 1s max-height;
+	max-height: 0;
+	overflow: hidden;
+	font-size: 20px;
+    margin: 10px;
+}
+#content .faq.open .answer{
+	transition: 1s max-height;
+	max-height: 200px;
+	height: auto;
 }
 
-.resource:nth-child(3n) {
-	margin-right: 0;
+#content .faq{
+	padding: 24px;
+	border-bottom: solid 1px #1b2035;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
 }
+
+#content .faq .question{
+	font-size: 30px;
+}
+
+#content .faq #chevron{
+	display: inline-block;
+    border-right: 3px solid #1b2035;
+    border-bottom: 3px solid #1b2035;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    transition: 1s transform;
+    position: absolute;
+    right: 60px;
+	top: 26px;
+	pointer-events: none;
+}
+
+#content .faq.open #chevron{
+	transform: rotate(225deg);
+	transition: 1s transform;
+}
+
 
 /* === WIDGETS === */
 
@@ -660,6 +755,13 @@ footer li.signup-link a:hover {
 	#instructor .container {
 		background: rgba(255,255,255,0.8);
 		padding: 20px;
+	}
+	#how-we-work .container > .row > div{
+		width: 80%;
+		margin-bottom: 20px;
+	}
+	#how-we-work i{
+		font-size: 40px;
 	}
 }
 
