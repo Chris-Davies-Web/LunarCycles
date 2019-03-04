@@ -307,9 +307,12 @@ div.navbar.navbar-inverse a.navbar-brand span{
 #hero .hero-text h1, #hero .hero-text p{
 	color: #1b2035;
 }
+#hero .hero-text h1{
+	font-size: 4em;
+}
 
 #hero .hero-text p{
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: bold;
 }
 
@@ -542,6 +545,10 @@ footer a:hover {
     font-weight: bold;
 }
 
+footer i{
+	margin-right: 10px;
+}
+
 
 
 
@@ -752,6 +759,15 @@ footer a:hover {
 /* ==== MEDIA QUERIES ==== */
 
 @media screen and (max-width : 991px) {
+	#hero{
+		background-repeat: repeat;
+	}
+	#hero .hero-text h1{
+		font-size: 3em;
+	}
+	#hero .hero-text p{
+		font-size: 16px;
+	}
 	#instructor .container {
 		background: rgba(255,255,255,0.8);
 		padding: 20px;
@@ -762,6 +778,25 @@ footer a:hover {
 	}
 	#how-we-work i{
 		font-size: 40px;
+	}
+
+	.feature-image.feature-image-default h1{
+		font-size: 26px;
+	}
+	#content .faq .question{
+		font-size: 20px;
+		width: 80%;
+	}
+	#content .faq #chevron{
+		width: 15px;
+		height: 15px;
+	}
+	#content .faq .answer{
+		font-size: 16px;
+		margin: 5px 0;
+	}
+	#primary, .main-content{
+		padding-top: 0;
 	}
 }
 
@@ -798,5 +833,9 @@ footer a:hover {
 	.resource {
 		width: 100%;
 		margin-right: 0;
+	}
+
+	#hero article{
+		top: -20px;
 	}
 }
