@@ -683,8 +683,8 @@ footer i{
 	border-top: solid 1px #eee;
 }
 
-/*=== FAQ === */
-#content .faq .answer{
+/*=== FAQ and SERVICES === */
+#content .faq .answer, #content .service .service-content{
 	transition: 1s max-height;
 	max-height: 0;
 	overflow: hidden;
@@ -697,7 +697,13 @@ footer i{
 	height: auto;
 }
 
-#content .faq{
+#content .service.open .service-content{
+	transition: 1s max-height;
+	max-height: 900px;
+	height: auto;
+}
+
+#content .faq, #content .service{
 	padding: 24px;
 	border-bottom: solid 1px #1b2035;
 	cursor: pointer;
@@ -705,11 +711,15 @@ footer i{
 	position: relative;
 }
 
-#content .faq .question{
+#content .service .price{
+	font-weight: bold;
+}
+
+#content .faq .question, #content .service .title{
 	font-size: 30px;
 }
 
-#content .faq #chevron{
+#content .faq #chevron, #content .service #chevron{
 	display: inline-block;
     border-right: 3px solid #1b2035;
     border-bottom: 3px solid #1b2035;
@@ -723,7 +733,7 @@ footer i{
 	pointer-events: none;
 }
 
-#content .faq.open #chevron{
+#content .faq.open #chevron, #content .service.open #chevron{
 	transform: rotate(225deg);
 	transition: 1s transform;
 }
@@ -783,15 +793,15 @@ footer i{
 	.feature-image.feature-image-default h1{
 		font-size: 26px;
 	}
-	#content .faq .question{
+	#content .faq .question, #content .service .title{
 		font-size: 20px;
 		width: 80%;
 	}
-	#content .faq #chevron{
+	#content .faq #chevron, #content .service #chevron{
 		width: 15px;
 		height: 15px;
 	}
-	#content .faq .answer{
+	#content .faq .answer, #content .service .service-content{
 		font-size: 16px;
 		margin: 5px 0;
 	}

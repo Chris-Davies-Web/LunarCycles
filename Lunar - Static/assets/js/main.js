@@ -24,7 +24,12 @@ $(function() {
 		}); // end window scroll
 	});
 
+	// Toggle accordions
 	$('.faq').click(function(){
+		$(this).toggleClass('open');
+	})
+
+	$('.service').click(function(){
 		$(this).toggleClass('open');
 	})
 	
