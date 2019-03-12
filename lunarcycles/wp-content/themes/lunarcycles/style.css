@@ -989,7 +989,7 @@ div.navbar.navbar-inverse a.navbar-brand span{
 /* ==== HERO ==== */
 
 #hero {
-	background: url('/wp-content/themes/lunarcycles/assets/img/img/hero-bg.jpg') 50% 0 no-repeat fixed;
+	background: url('/wp-content/themes/lunarcycles/assets/img/hero-bg.jpg') 50% 0 no-repeat fixed;
     height: 75vh;
     position: relative;
     display: table;

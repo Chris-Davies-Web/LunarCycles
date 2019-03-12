@@ -11,6 +11,25 @@
 
 ?>
 
+
+	<!-- FOOTER
+	================================================== -->
+	<footer>
+		<div class="container">
+			<div class="col-sm-9">
+				<nav>
+					<ul class="list-unstyled list-inline">
+						<li><i class="fab fa-twitter"></i><a href="https://twitter.com/lunarcycles_">Twitter</a></li>
+						<li><i class="fab fa-facebook-square"></i></i><a href="https://www.facebook.com/LunarCyclesWorkshop">Facebook</a></li>
+					</ul>
+				</nav>
+			</div><!-- end col -->
+			<div class="col-sm-3">
+				<p class="pull-right">&copy; Lunar Cycles 2019</p>
+			</div><!-- end col -->
+		</div><!-- container -->
+	</footer>
+
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
