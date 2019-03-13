@@ -929,6 +929,10 @@ form.search-form .form-group {
 	margin: 0;
 }
 
+.main-content form{
+	margin-bottom: 40px;
+}
+
 form.search-form .input-group {
 	width: 100%;
 }
@@ -957,8 +961,28 @@ div.navbar.navbar-inverse{
 	background-color: #1b2035;
 }
 
-div.navbar.navbar-inverse .navbar-nav > .active > a{
+.navbar-nav li {
+	display: inline-block;
+}
+
+.navbar-nav li a:visited, .navbar-nav li a{
+	color: #777;
+}
+.navbar-nav li a:hover{
+	color: white;
+}
+
+.navbar-nav li a {
+    padding: 15px;
+}
+
+div.navbar.navbar-inverse .navbar-nav  ul{
+	list-style: none;
+}
+
+div.navbar.navbar-inverse .navbar-nav .current_page_item > a{
 	background-color: #44caea;
+	color: white;
 	font-weight: bold;
 }
 
@@ -1545,6 +1569,9 @@ footer i{
 	.resource {
 		width: 48%;
 		margin-right: 2%;
+	}
+	.navbar-nav li{
+		width: 100%;
 	}
 }
 
